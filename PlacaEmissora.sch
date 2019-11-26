@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PlacaEmissora-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -34,7 +35,7 @@ Wire Wire Line
 	5000 2450 5000 2550
 Wire Wire Line
 	4800 2950 4700 2950
-Text GLabel 6200 2500 0    50   Input ~ 0
+Text GLabel 5900 2500 0    50   Input ~ 0
 VCC
 Text GLabel 6200 3000 0    50   Input ~ 0
 GND
@@ -141,15 +142,28 @@ $EndComp
 Wire Wire Line
 	6200 3000 6400 3000
 Wire Wire Line
-	6200 2500 6400 2500
-Wire Wire Line
 	6400 2500 6700 2500
 Wire Wire Line
 	6700 2500 6700 2700
-Connection ~ 6400 2500
 Wire Wire Line
 	6700 2800 6700 3000
 Wire Wire Line
 	6700 3000 6400 3000
 Connection ~ 6400 3000
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5DDD0F13
+P 6150 2500
+F 0 "SW1" H 6150 2600 50  0000 C CNN
+F 1 "SW_SPST" H 6150 2400 50  0000 C CNN
+F 2 "Connector:BotaoOnOff" H 6150 2500 50  0001 C CNN
+F 3 "~" H 6150 2500 50  0001 C CNN
+	1    6150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2500 6400 2500
+Connection ~ 6400 2500
+Wire Wire Line
+	5900 2500 5950 2500
 $EndSCHEMATC
